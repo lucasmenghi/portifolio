@@ -1,0 +1,277 @@
+
+/* Portfolio template inspired by Caio Casagrande layout, customized for Lucas Menghi.
+   Dark gray/black palette. No external dependencies. */
+
+:root {
+  --bg: #111111;
+  --bg2: #171717;
+  --panel: #1f1f1f;
+  --text: #262626;
+  --muted: #666666;
+  --light: #d9d9d9;
+  --line: #d4d4d4;
+  --active: #e5e5e5;
+  --active-text: #111111;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: #ffffff;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+body.is-preload * { transition: none !important; }
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+}
+
+a:hover { border-bottom-color: transparent; }
+
+strong, b {
+  color: #111111;
+  font-weight: 700;
+}
+
+h1, h2, h3 {
+  color: #0a0a0a;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+h1 { font-size: 2.15rem; margin: 0 0 1.35rem; }
+h2 { font-size: 1.9rem; margin: 0 0 1.3rem; }
+h3 { font-size: 1.15rem; margin: 1.75rem 0 .75rem; }
+
+p { margin: 0 0 1.15rem; }
+ul { padding-left: 1.25rem; }
+li { margin-bottom: .65rem; }
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  min-width: 320px;
+  max-width: 470px;
+  min-height: 100vh;
+  padding: 7rem 3rem 4rem;
+  text-align: center;
+  color: var(--light);
+  background:
+    linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.30)),
+    url("../../images/bg.jpg") center center / cover no-repeat,
+    #111111;
+}
+
+#header .inner { width: 100%; }
+
+.image.avatar {
+  display: inline-block;
+  border-bottom: 0;
+}
+
+.image.avatar img {
+  width: 9.5rem;
+  height: 9.5rem;
+  object-fit: cover;
+  border-radius: 100%;
+  background: #fff;
+  box-shadow: 0 0 0 6px rgba(255,255,255,.88);
+}
+
+#header h1 {
+  margin: 2rem 0 3.2rem;
+  color: #d9d9d9;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+#header p { margin: .95rem auto; }
+
+#header p a {
+  display: inline-block;
+  min-width: 220px;
+  padding: .35rem .7rem;
+  color: #d9d9d9 !important;
+  font-size: 1.04rem;
+  border-bottom: 1px dotted rgba(255,255,255,.60);
+}
+
+#header p a:hover {
+  color: #fff !important;
+}
+
+#header .nav-ativo a {
+  color: var(--active-text) !important;
+  background: var(--active);
+  border-bottom-color: transparent;
+}
+
+#main {
+  margin-left: max(30%, 320px);
+  padding: 4.4rem 5rem 4rem;
+  max-width: 1120px;
+}
+
+section {
+  padding: 2.8rem 0;
+  border-top: 2px solid var(--line);
+}
+
+section:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+header.major h2 { margin-bottom: 1.5rem; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.col-6 { width: calc(50% - 1rem); }
+.col-12, .col-12-xsmall { width: 100%; }
+
+.work-item { margin-bottom: 2rem; }
+
+.image.fit {
+  display: block;
+  width: 100%;
+  margin: .9rem 0 1.6rem;
+  border-bottom: 0;
+}
+
+.image.fit img {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: .35rem;
+  border: 1px solid var(--line);
+}
+
+.labeled-icons {
+  list-style: none;
+  padding-left: 0;
+}
+
+.labeled-icons li {
+  position: relative;
+  padding-left: 2.2rem;
+}
+
+.labeled-icons h3 {
+  position: absolute;
+  left: 0;
+  top: .1rem;
+  margin: 0;
+  width: 1.6rem;
+  color: #525252;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 5rem;
+  width: 30%;
+  min-width: 320px;
+  max-width: 470px;
+  text-align: center;
+  z-index: 3;
+}
+
+#footer .icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer .icons li {
+  display: inline-block;
+  margin: 0 .55rem;
+}
+
+#footer .icons a {
+  border-bottom: 0 !important;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+  opacity: .82;
+  transition: .2s ease;
+}
+
+.social-icon:hover {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.icon-img {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 980px) {
+  #header {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    min-height: auto;
+    padding: 4rem 2rem 3rem;
+  }
+
+  #footer {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    bottom: auto;
+    padding: 2rem 0 3rem;
+    background:
+      linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.30)),
+      url("../../images/bg.jpg") center bottom / cover no-repeat,
+      #111111;
+  }
+
+  #main {
+    margin-left: 0;
+    padding: 3rem 2rem;
+    max-width: none;
+  }
+
+  .col-6 { width: 100%; }
+}
+
+@media screen and (max-width: 600px) {
+  body { font-size: 15px; }
+
+  #header { padding: 3rem 1.4rem 2.4rem; }
+
+  .image.avatar img {
+    width: 8.2rem;
+    height: 8.2rem;
+  }
+
+  #header p a { min-width: 205px; }
+
+  #main { padding: 2.3rem 1.3rem; }
+
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.55rem; }
+}

@@ -1,0 +1,1 @@
+/* original template optional dependency placeholder */
