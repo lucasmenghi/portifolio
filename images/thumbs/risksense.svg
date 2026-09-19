@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">RiskSense</title>
+  <desc id="description">External risk intelligence represented by connected signals and a protective radar.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081624"/>
+      <stop offset="0.55" stop-color="#102c42"/>
+      <stop offset="1" stop-color="#07111d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="72%" cy="48%" r="46%">
+      <stop offset="0" stop-color="#54e0c7" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#54e0c7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7cf4dc"/>
+      <stop offset="1" stop-color="#22a8ce"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#background)"/>
+  <rect width="1200" height="675" fill="url(#glow)"/>
+  <g fill="none" stroke="#8eb7c8" stroke-opacity=".11">
+    <path d="M0 115h1200M0 225h1200M0 335h1200M0 445h1200M0 555h1200"/>
+    <path d="M105 0v675M215 0v675M325 0v675M435 0v675M545 0v675M655 0v675M765 0v675M875 0v675M985 0v675M1095 0v675"/>
+  </g>
+  <g transform="translate(86 123)">
+    <text x="0" y="69" fill="#f3f8fa" font-family="Arial, Helvetica, sans-serif" font-size="74" font-weight="700" letter-spacing="-2">RiskSense</text>
+    <text x="2" y="119" fill="#7cf4dc" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" letter-spacing="4">EXTERNAL RISK INTELLIGENCE</text>
+    <path d="M2 161h390" stroke="#7cf4dc" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+    <text x="2" y="217" fill="#c0d1d9" font-family="Arial, Helvetica, sans-serif" font-size="25">From external signals</text>
+    <text x="2" y="255" fill="#c0d1d9" font-family="Arial, Helvetica, sans-serif" font-size="25">to proactive decisions.</text>
+    <g transform="translate(2 314)" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="1">
+      <rect width="92" height="38" rx="19" fill="#173d4c" stroke="#2a7182"/>
+      <text x="46" y="25" fill="#aee8e2" text-anchor="middle">LLM</text>
+      <rect x="108" width="144" height="38" rx="19" fill="#173d4c" stroke="#2a7182"/>
+      <text x="180" y="25" fill="#aee8e2" text-anchor="middle">DATABRICKS</text>
+      <rect x="268" width="116" height="38" rx="19" fill="#173d4c" stroke="#2a7182"/>
+      <text x="326" y="25" fill="#aee8e2" text-anchor="middle">PYSPARK</text>
+    </g>
+  </g>
+  <g transform="translate(790 337)" filter="url(#shadow)">
+    <circle r="218" fill="#0b1d2b" stroke="#3b8290" stroke-opacity=".46" stroke-width="2"/>
+    <circle r="166" fill="none" stroke="#65c9c0" stroke-opacity=".18" stroke-width="2"/>
+    <circle r="108" fill="none" stroke="#65c9c0" stroke-opacity=".23" stroke-width="2"/>
+    <path d="M0-218V218M-218 0H218M-154-154L154 154M154-154L-154 154" stroke="#65c9c0" stroke-opacity=".13"/>
+    <path d="M0 0L91-185A205 205 0 0 1 177-102Z" fill="#55ddc5" opacity=".13"/>
+    <circle cx="91" cy="-185" r="11" fill="#ffcb66"/>
+    <circle cx="177" cy="-102" r="8" fill="#ff718b"/>
+    <circle cx="-152" cy="-55" r="7" fill="#55ddc5"/>
+    <circle cx="134" cy="110" r="7" fill="#55ddc5"/>
+    <path d="M0-91l83 30v68c0 61-36 106-83 130-47-24-83-69-83-130v-68Z" fill="url(#shield)"/>
+    <path d="M-37 14l25 25 52-61" fill="none" stroke="#071923" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
