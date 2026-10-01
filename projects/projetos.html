@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="pt-BR">
 <head>
 <title>Lucas Menghi | Projetos</title>
 <link href="../assets/css/main.css" rel="stylesheet"/>
@@ -9,58 +9,6 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="Lucas Menghi, projetos de dados, data science, product analytics, machine learning, data engineering, SQL, Python, Databricks, Power BI" name="keywords"/>
 <meta content="Projetos de Data Science, Product Analytics e Data Engineering de Lucas Menghi" name="description"/>
-
-<style>
-  /* Ajuste visual dos projetos no padrão de cards com hierarquia maior */
-  .project-category h2 {
-    font-size: 2.1rem;
-    font-weight: 500;
-    margin-bottom: 0.7em;
-  }
-
-  .project-category > p {
-    font-size: 1.22rem;
-    line-height: 1.8;
-    color: #666666;
-    margin-bottom: 2em;
-  }
-
-  .project-category h3 {
-    font-size: 1.65rem;
-    font-weight: 500;
-    margin: 1.8em 0 0.8em;
-  }
-
-  .project-category ul {
-    font-size: 1.18rem;
-    line-height: 1.9;
-    margin-bottom: 2em;
-  }
-
-  .project-category ul li {
-    margin-bottom: 0.45em;
-  }
-
-  .project-card h3 {
-    font-size: 1.55rem;
-    font-weight: 500;
-  }
-
-  .project-card h4 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-top: 1.4em;
-  }
-
-  .project-card p {
-    font-size: 1.08rem;
-    line-height: 1.8;
-  }
-
-  .project-tags {
-    font-size: 1rem;
-  }
-</style>
 </head>
 <body class="is-preload">
 <header id="header">
@@ -69,10 +17,10 @@
 <h1>Lucas Menghi</h1>
 </div>
 <div>
-<p><a href="../index.html" style="color: #D9D9D9;">Sobre Mim (pt-br)</a></p>
-<p><a href="../about/about_me.html" style="color: #D9D9D9;">About Me (en-us)</a></p>
+<p><a href="../index.html">Sobre Mim (pt-br)</a></p>
+<p><a href="../about/about_me.html">About Me (en-us)</a></p>
 <p class="nav-ativo"><a href="projetos.html">Projetos (pt-br)</a></p>
-<p><a href="projects.html" style="color: #D9D9D9;">Projects (en-us)</a></p>
+<p><a href="projects.html">Projects (en-us)</a></p>
 </div>
 </header>
 <div id="main">
@@ -90,7 +38,7 @@
 <p>Projetos focados em diagnóstico de jornada, análise de funil, identificação de gargalos, priorização de causas, experimentação e mensuração de impacto em produtos. Vale mencionar que boa parte desses projetos são casos reais, onde preservamos a metodologia e a aplicamos em dados anonimizados, respeitando as regras de compliance.</p>
 <div class="row project-grid">
 <article class="col-6 work-item project-card">
-<h3>Otimização do Fluxo de Onboarding Digital</h3>
+<h3 class="project-title">Otimização do Fluxo de Onboarding Digital</h3>
 <a class="image fit thumb" href="https://github.com/lucasmenghi/Case_Onboarding_Study" rel="noopener" target="_blank">
 <img alt="Otimização do Fluxo de Onboarding Digital" src="../images/thumbs/digital-onboarding.jpeg"/>
 </a>
@@ -109,54 +57,105 @@
 <header class="major">
 <h2>🤖 Data Science &amp; IA Generativa</h2>
 </header>
-<p>Projetos voltados à construção de modelos preditivos, preparação de dados, avaliação de performance, análise estatística e geração de recomendações acionáveis para o negócio.</p><h3>Subáreas</h3><ul><li>Modelos de Regressão</li><li>Modelos de Classificação</li><li>Modelos de Clusterização</li><li>Modelos de Deep Learning</li><li>Séries Temporais</li><li>Produtos de IA Generativa</li></ul>
+<p>Projetos voltados à construção de modelos preditivos, preparação de dados, avaliação de performance, análise estatística e geração de recomendações acionáveis para o negócio.</p><nav class="subarea-nav" aria-label="Navegue por subárea">
+<p class="nav-label">Navegue por subárea</p>
+<ul>
+<li><a href="#regressao">Modelos de Regressão</a></li>
+<li><a href="#classificacao">Modelos de Classificação</a></li>
+<li><a href="#clusterizacao">Modelos de Clusterização</a></li>
+<li><a href="#deep-learning">Modelos de Deep Learning</a></li>
+<li><a href="#series-temporais">Séries Temporais</a></li>
+<li><a href="#ia-generativa">Produtos de IA Generativa</a></li>
+</ul>
+</nav>
+<section class="project-subarea" id="regressao" aria-labelledby="regressao-title">
+<header class="subarea-heading">
+<h3 id="regressao-title">Modelos de Regressão</h3>
+<span class="subarea-count">1 projeto publicado</span>
+</header>
+<p class="subarea-description">Previsão de valores contínuos, comparação com regras de referência e avaliação do erro em períodos futuros.</p>
 <div class="row project-grid">
 <article class="col-6 work-item project-card">
-<h3>Online Retail — Previsão de Compras</h3>
+<h4 class="project-title">Online Retail — Previsão de Compras</h4>
 <a class="image fit thumb" href="https://github.com/lucasmenghi/online-retail" rel="noopener" target="_blank">
-<img alt="Online Retail — Previsão de compras em 30 dias com regressão e CRISP-DM" src="../images/thumbs/online-retail-cover.png" loading="lazy" style="height: auto; max-height: none; aspect-ratio: 16 / 9; object-fit: contain;"/>
+<img alt="Online Retail — Previsão de compras em 30 dias com regressão e CRISP-DM" src="../images/thumbs/online-retail-cover.png" loading="lazy"/>
 </a>
 <div class="project-content">
-<h4>Contexto:</h4>
+<h5>Contexto:</h5>
 <p>Previsão do valor bruto comprado por cliente nos próximos 30 dias, utilizando 90 dias de histórico transacional para apoiar o planejamento de receita.</p>
-<h4>Abordagem:</h4>
+<h5>Abordagem:</h5>
 <p>Fluxo CRISP-DM com preparação temporal, comparação de 23 configurações de regressão e avaliação em período posterior ao congelamento do modelo. Desenvolvimento governado com assistência de agente de IA, revisão e aprovação humana no fluxo.</p>
-<h4>Resultado:</h4>
+<h5>Resultado:</h5>
 <p>No teste com 2.461 clientes, a regra histórica superou a regressão em RMSE (£927,77 contra £1.127,79). A recomendação preserva a solução mais simples, com modelo, testes e evidências documentados.</p>
 <p class="project-tags">Python · Scikit-learn · Regressão Tweedie · CRISP-DM · Validação Temporal · Governança de ML</p>
 </div>
 <a class="button project-button" href="https://github.com/lucasmenghi/online-retail" rel="noopener" target="_blank">Ver projeto →</a>
 </article>
+</div>
+</section>
+<section class="project-subarea is-empty" id="classificacao" aria-labelledby="classificacao-title">
+<header class="subarea-heading">
+<h3 id="classificacao-title">Modelos de Classificação</h3>
+<span class="subarea-count">0 projetos publicados</span>
+</header>
+<p class="subarea-empty">Ainda não há projetos publicados nesta subárea.</p>
+</section>
+<section class="project-subarea is-empty" id="clusterizacao" aria-labelledby="clusterizacao-title">
+<header class="subarea-heading">
+<h3 id="clusterizacao-title">Modelos de Clusterização</h3>
+<span class="subarea-count">0 projetos publicados</span>
+</header>
+<p class="subarea-empty">Ainda não há projetos publicados nesta subárea.</p>
+</section>
+<section class="project-subarea is-empty" id="deep-learning" aria-labelledby="deep-learning-title">
+<header class="subarea-heading">
+<h3 id="deep-learning-title">Modelos de Deep Learning</h3>
+<span class="subarea-count">0 projetos publicados</span>
+</header>
+<p class="subarea-empty">Ainda não há projetos publicados nesta subárea.</p>
+</section>
+<section class="project-subarea is-empty" id="series-temporais" aria-labelledby="series-temporais-title">
+<header class="subarea-heading">
+<h3 id="series-temporais-title">Séries Temporais</h3>
+<span class="subarea-count">0 projetos publicados</span>
+</header>
+<p class="subarea-empty">Ainda não há projetos publicados nesta subárea.</p>
+</section>
+<section class="project-subarea" id="ia-generativa" aria-labelledby="ia-generativa-title">
+<header class="subarea-heading">
+<h3 id="ia-generativa-title">Produtos de IA Generativa</h3>
+<span class="subarea-count">3 projetos publicados</span>
+</header>
+<p class="subarea-description">Produtos conversacionais, inteligência com LLMs e ferramentas de apoio ao desenvolvimento com agentes.</p>
+<div class="row project-grid">
 <article class="col-6 work-item project-card">
-<h3>Cabe no Bolso</h3>
+<h4 class="project-title">Cabe no Bolso</h4>
 <a class="image fit thumb" href="https://github.com/guiwatanabe/iai-cabe-no-bolso" rel="noopener" target="_blank"><img alt="Cabe no Bolso — IA conversacional para saúde financeira" src="../images/thumbs/cabe-no-bolso.jpg"/></a>
 <div class="project-content">
-<h4>Contexto:</h4>
+<h5>Contexto:</h5>
 <p>Produto de IA conversacional proativa criado para apoiar clientes quando a fatura do cartão não cabe no orçamento. A solução identifica sinais de aperto financeiro antes do vencimento e transforma esse diagnóstico em uma jornada simples, contextual e orientada à ação.</p>
-<h4>Abordagem:</h4>
+<h5>Abordagem:</h5>
 <p>A partir do comportamento financeiro e da projeção da fatura, o agente contextualiza a situação e apresenta somente alternativas de crédito previamente elegíveis e liberadas pelos sistemas determinísticos, como mudança de vencimento, cheque especial ou crédito com parcelas compatíveis com o orçamento.</p>
-<h4>Diferencial:</h4>
+<h5>Diferencial:</h5>
 <p>Separa claramente decisão financeira e conversação: regras e sistemas de crédito determinam valores, limites e elegibilidade, enquanto a IA explica opções, custos e consequências em linguagem simples, preservando consentimento, rastreabilidade e controle humano.</p>
 <p class="project-tags">Generative AI · AI Agents · Conversational AI · Product Discovery · Financial Analytics · Responsible AI · UX · Credit</p>
 </div>
 <a class="button project-button" href="https://github.com/guiwatanabe/iai-cabe-no-bolso" rel="noopener" target="_blank">Ver projeto →</a>
 </article>
-
-<!-- Adicione novos projetos aqui seguindo o mesmo modelo de article.project-card -->
-      <article class="col-6 work-item project-card">
-      <h3>RiskSense</h3>
+<article class="col-6 work-item project-card">
+      <h4 class="project-title">RiskSense</h4>
       <a href="https://github.com/lucasmenghi/risksense" target="_blank" rel="noopener" class="image fit thumb">
         <img src="../images/thumbs/risksense.jpg" alt="RiskSense — Inteligência Externa de Risco" />
       </a>
 
       <div class="project-content">
-        <h4>Contexto:</h4>
+        <h5>Contexto:</h5>
         <p>Produto de inteligência externa de risco criado para antecipar eventos relevantes em grandes empresas antes que seus efeitos apareçam nos indicadores internos. A solução transforma notícias e dados públicos dispersos em sinais estruturados, priorizados e acionáveis para analistas de risco.</p>
 
-        <h4>Abordagem:</h4>
+        <h5>Abordagem:</h5>
         <p>Pipeline no Databricks para ingestão auditável de fontes externas, extração de eventos com LLM, resolução de entidades e grupos econômicos, cruzamento com uma carteira autorizada e cálculo de score explicável. Uma aplicação Streamlit centraliza a fila priorizada e registra a avaliação humana dos sinais.</p>
 
-        <h4>Diferencial:</h4>
+        <h5>Diferencial:</h5>
         <p>Combina IA Generativa, engenharia de dados e human-in-the-loop em uma arquitetura ponta a ponta, convertendo conteúdo não estruturado em inteligência rastreável para apoiar decisões preventivas.</p>
 
         <p class="project-tags">Generative AI · LLM · AI Agents · Databricks · PySpark · Delta Lake · Streamlit · Risk Intelligence · Human-in-the-loop</p>
@@ -164,20 +163,20 @@
 
       <a class="button project-button" href="https://github.com/lucasmenghi/risksense" target="_blank" rel="noopener">Ver projeto →</a>
     </article>
-      <article class="col-6 work-item project-card">
-      <h3>Data Science Skills</h3>
+<article class="col-6 work-item project-card">
+      <h4 class="project-title">Data Science Skills</h4>
       <a href="https://github.com/lucasmenghi/data-science-skills" target="_blank" rel="noopener" class="image fit thumb">
         <img src="../images/thumbs/data-science-skills.jpg" alt="Data Science Skills" />
       </a>
 
       <div class="project-content">
-        <h4>Contexto:</h4>
+        <h5>Contexto:</h5>
         <p>Biblioteca open source de skills reutilizáveis para apoiar assistentes de IA durante todo o ciclo de vida de projetos de Data Science, conectando entendimento de negócio, metodologia analítica e execução técnica.</p>
 
-        <h4>Abordagem:</h4>
+        <h5>Abordagem:</h5>
         <p>Estrutura modular organizada por etapas como Business Understanding, descoberta e preparação de dados, feature engineering, desenvolvimento, validação, interpretabilidade, implantação, monitoramento e mensuração de impacto.</p>
 
-        <h4>Diferencial:</h4>
+        <h5>Diferencial:</h5>
         <p>Cada skill segue uma estrutura padronizada com instruções, referências, templates, scripts e exemplos práticos, ajudando agentes de IA e profissionais de dados a tomar decisões mais consistentes além da simples geração de código.</p>
 
         <p class="project-tags">Generative AI · AI Agents · Data Science · Machine Learning · Prompt Engineering · Python · Open Source</p>
@@ -187,6 +186,7 @@
     </article>
 </div>
 </section>
+</section>
 <section class="project-category">
 <header class="major">
 <h2>🏗️ Data Engineering &amp; Automation</h2>
@@ -195,7 +195,7 @@
 <div class="row project-grid">
 <!-- Adicione novos projetos aqui seguindo o mesmo modelo de article.project-card -->
 <article class="col-6 work-item project-card">
-<h3>Pipeline ETL para Risco de Crédito</h3>
+<h3 class="project-title">Pipeline ETL para Risco de Crédito</h3>
 <a class="image fit thumb" href="https://github.com/lucasmenghi/portifolio/blob/main/images/thumbs/hc_image.jpeg" rel="noopener" target="_blank">
 <img alt="Credit Risk ETL Pipeline" src="../images/thumbs/hc_image.jpeg"/>
 </a>

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="en">
 <head>
 <title>Lucas Menghi | Projects</title>
 <link href="../assets/css/main.css" rel="stylesheet"/>
@@ -9,58 +9,6 @@
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="Lucas Menghi, data projects, data science, product analytics, machine learning, data engineering, SQL, Python, Databricks, Power BI" name="keywords"/>
 <meta content="Lucas Menghi | Data Science, Product Analytics and Data Engineering Projects" name="description"/>
-
-<style>
-  /* Ajuste visual dos projetos no padrão de cards com hierarquia maior */
-  .project-category h2 {
-    font-size: 2.1rem;
-    font-weight: 500;
-    margin-bottom: 0.7em;
-  }
-
-  .project-category > p {
-    font-size: 1.22rem;
-    line-height: 1.8;
-    color: #666666;
-    margin-bottom: 2em;
-  }
-
-  .project-category h3 {
-    font-size: 1.65rem;
-    font-weight: 500;
-    margin: 1.8em 0 0.8em;
-  }
-
-  .project-category ul {
-    font-size: 1.18rem;
-    line-height: 1.9;
-    margin-bottom: 2em;
-  }
-
-  .project-category ul li {
-    margin-bottom: 0.45em;
-  }
-
-  .project-card h3 {
-    font-size: 1.55rem;
-    font-weight: 500;
-  }
-
-  .project-card h4 {
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-top: 1.4em;
-  }
-
-  .project-card p {
-    font-size: 1.08rem;
-    line-height: 1.8;
-  }
-
-  .project-tags {
-    font-size: 1rem;
-  }
-</style>
 </head>
 <body class="is-preload">
 <header id="header">
@@ -69,9 +17,9 @@
 <h1>Lucas Menghi</h1>
 </div>
 <div>
-<p><a href="../index.html" style="color: #D9D9D9;">Sobre Mim (pt-br)</a></p>
-<p><a href="../about/about_me.html" style="color: #D9D9D9;">About Me (en-us)</a></p>
-<p><a href="projetos.html" style="color: #D9D9D9;">Projetos (pt-br)</a></p>
+<p><a href="../index.html">Sobre Mim (pt-br)</a></p>
+<p><a href="../about/about_me.html">About Me (en-us)</a></p>
+<p><a href="projetos.html">Projetos (pt-br)</a></p>
 <p class="nav-ativo"><a href="projects.html">Projects (en-us)</a></p>
 </div>
 </header>
@@ -90,7 +38,7 @@
 <p>Projects focused on journey diagnosis, funnel analysis, bottleneck identification, root-cause prioritization, experimentation, and product impact measurement. Most of these projects are based on real business cases, where the methodology has been preserved while using anonymized data to comply with confidentiality requirements.</p>
 <div class="row project-grid">
 <article class="col-6 work-item project-card">
-<h3>Digital Onboarding Optimization</h3>
+<h3 class="project-title">Digital Onboarding Optimization</h3>
 <a class="image fit thumb" href="https://github.com/lucasmenghi/Case_Onboarding_Study" rel="noopener" target="_blank">
 <img alt="Digital Onboarding Optimization" src="../images/thumbs/digital-onboarding.jpeg"/>
 </a>
@@ -109,54 +57,105 @@
 <header class="major">
 <h2>🤖 Data Science &amp; Generative AI</h2>
 </header>
-<p>Projects focused on predictive modeling, data preparation, model evaluation, statistical analysis, and actionable business recommendations.</p><h3>Topics Covered</h3><ul><li>Regression Models</li><li>Classification Models</li><li>Clustering Models</li><li>Deep Learning Models</li><li>Time Series</li><li>Generative AI Products</li></ul>
+<p>Projects focused on predictive modeling, data preparation, model evaluation, statistical analysis, and actionable business recommendations.</p><nav class="subarea-nav" aria-label="Browse by subarea">
+<p class="nav-label">Browse by subarea</p>
+<ul>
+<li><a href="#regression">Regression Models</a></li>
+<li><a href="#classification">Classification Models</a></li>
+<li><a href="#clustering">Clustering Models</a></li>
+<li><a href="#deep-learning">Deep Learning Models</a></li>
+<li><a href="#time-series">Time Series</a></li>
+<li><a href="#generative-ai">Generative AI Products</a></li>
+</ul>
+</nav>
+<section class="project-subarea" id="regression" aria-labelledby="regression-title">
+<header class="subarea-heading">
+<h3 id="regression-title">Regression Models</h3>
+<span class="subarea-count">1 published project</span>
+</header>
+<p class="subarea-description">Predicting continuous values, comparing against baseline rules, and evaluating errors on future periods.</p>
 <div class="row project-grid">
 <article class="col-6 work-item project-card">
-<h3>Online Retail — Purchase Forecasting</h3>
+<h4 class="project-title">Online Retail — Purchase Forecasting</h4>
 <a class="image fit thumb" href="https://github.com/lucasmenghi/online-retail" rel="noopener" target="_blank">
-<img alt="Online Retail — 30-day purchase value forecasting with regression and CRISP-DM" src="../images/thumbs/online-retail-cover.png" loading="lazy" style="height: auto; max-height: none; aspect-ratio: 16 / 9; object-fit: contain;"/>
+<img alt="Online Retail — 30-day purchase value forecasting with regression and CRISP-DM" src="../images/thumbs/online-retail-cover.png" loading="lazy"/>
 </a>
 <div class="project-content">
-<h4>Context:</h4>
+<h5>Context:</h5>
 <p>Forecasting each customer's gross purchase value over the next 30 days, using 90 days of transaction history to support revenue planning.</p>
-<h4>Approach:</h4>
+<h5>Approach:</h5>
 <p>A CRISP-DM workflow with temporal feature preparation, comparison of 23 regression configurations, and evaluation on a period held out until model freeze. Governed development with AI-agent assistance, human review, and approval within the workflow.</p>
-<h4>Result:</h4>
+<h5>Result:</h5>
 <p>On the 2,461-customer test set, the historical rule outperformed regression on RMSE (£927.77 vs. £1,127.79). The recommendation retains the simpler method, supported by a documented model, tests, and evidence.</p>
 <p class="project-tags">Python · Scikit-learn · Tweedie Regression · CRISP-DM · Temporal Validation · ML Governance</p>
 </div>
 <a class="button project-button" href="https://github.com/lucasmenghi/online-retail" rel="noopener" target="_blank">View project →</a>
 </article>
+</div>
+</section>
+<section class="project-subarea is-empty" id="classification" aria-labelledby="classification-title">
+<header class="subarea-heading">
+<h3 id="classification-title">Classification Models</h3>
+<span class="subarea-count">0 published projects</span>
+</header>
+<p class="subarea-empty">No projects have been published in this subarea yet.</p>
+</section>
+<section class="project-subarea is-empty" id="clustering" aria-labelledby="clustering-title">
+<header class="subarea-heading">
+<h3 id="clustering-title">Clustering Models</h3>
+<span class="subarea-count">0 published projects</span>
+</header>
+<p class="subarea-empty">No projects have been published in this subarea yet.</p>
+</section>
+<section class="project-subarea is-empty" id="deep-learning" aria-labelledby="deep-learning-title">
+<header class="subarea-heading">
+<h3 id="deep-learning-title">Deep Learning Models</h3>
+<span class="subarea-count">0 published projects</span>
+</header>
+<p class="subarea-empty">No projects have been published in this subarea yet.</p>
+</section>
+<section class="project-subarea is-empty" id="time-series" aria-labelledby="time-series-title">
+<header class="subarea-heading">
+<h3 id="time-series-title">Time Series</h3>
+<span class="subarea-count">0 published projects</span>
+</header>
+<p class="subarea-empty">No projects have been published in this subarea yet.</p>
+</section>
+<section class="project-subarea" id="generative-ai" aria-labelledby="generative-ai-title">
+<header class="subarea-heading">
+<h3 id="generative-ai-title">Generative AI Products</h3>
+<span class="subarea-count">3 published projects</span>
+</header>
+<p class="subarea-description">Conversational products, LLM-based intelligence, and tools that support agent-assisted development.</p>
+<div class="row project-grid">
 <article class="col-6 work-item project-card">
-<h3>Cabe no Bolso</h3>
+<h4 class="project-title">Cabe no Bolso</h4>
 <a class="image fit thumb" href="https://github.com/guiwatanabe/iai-cabe-no-bolso" rel="noopener" target="_blank"><img alt="Cabe no Bolso — Conversational AI for financial health" src="../images/thumbs/cabe-no-bolso.jpg"/></a>
 <div class="project-content">
-<h4>Context:</h4>
+<h5>Context:</h5>
 <p>A proactive conversational AI product designed to support customers when their credit card bill no longer fits their monthly budget. The solution identifies financial stress signals before the due date and turns the diagnosis into a simple, contextual, action-oriented journey.</p>
-<h4>Approach:</h4>
+<h5>Approach:</h5>
 <p>Using financial behavior and bill projections, the agent contextualizes the situation and presents only credit alternatives already deemed eligible by deterministic systems, such as changing the due date, overdraft options, or credit offers with installments that fit the customer's budget.</p>
-<h4>Key Differentiator:</h4>
+<h5>Key Differentiator:</h5>
 <p>Clearly separates financial decisioning from conversation: credit rules and systems determine amounts, limits, and eligibility, while AI explains options, costs, and consequences in simple language, preserving consent, traceability, and human control.</p>
 <p class="project-tags">Generative AI · AI Agents · Conversational AI · Product Discovery · Financial Analytics · Responsible AI · UX · Credit</p>
 </div>
 <a class="button project-button" href="https://github.com/guiwatanabe/iai-cabe-no-bolso" rel="noopener" target="_blank">View project →</a>
 </article>
-
-<!-- Add new projects here using the same article.project-card structure -->
-    <article class="col-6 work-item project-card">
-      <h3>RiskSense</h3>
+<article class="col-6 work-item project-card">
+      <h4 class="project-title">RiskSense</h4>
       <a href="https://github.com/lucasmenghi/risksense" target="_blank" rel="noopener" class="image fit thumb">
         <img src="../images/thumbs/risksense.jpg" alt="RiskSense — External Risk Intelligence" />
       </a>
 
       <div class="project-content">
-        <h4>Context:</h4>
+        <h5>Context:</h5>
         <p>An external risk intelligence product designed to identify relevant events involving large companies before their effects appear in internal indicators. The solution turns fragmented news and public data into structured, prioritized, and actionable signals for risk analysts.</p>
 
-        <h4>Approach:</h4>
+        <h5>Approach:</h5>
         <p>A Databricks pipeline provides auditable ingestion of external sources, LLM-based event extraction, entity and economic group resolution, portfolio matching, and explainable scoring. A Streamlit application centralizes the prioritized review queue and captures human feedback on each signal.</p>
 
-        <h4>Key Differentiator:</h4>
+        <h5>Key Differentiator:</h5>
         <p>Combines Generative AI, data engineering, and human-in-the-loop review in an end-to-end architecture that converts unstructured content into traceable intelligence for proactive decision-making.</p>
 
         <p class="project-tags">Generative AI · LLM · AI Agents · Databricks · PySpark · Delta Lake · Streamlit · Risk Intelligence · Human-in-the-loop</p>
@@ -164,28 +163,29 @@
 
       <a class="button project-button" href="https://github.com/lucasmenghi/risksense" target="_blank" rel="noopener">View project →</a>
     </article>
-    <article class="col-6 work-item project-card">
-      <h3>Data Science Skills</h3>
+<article class="col-6 work-item project-card">
+      <h4 class="project-title">Data Science Skills</h4>
       <a href="https://github.com/lucasmenghi/data-science-skills" target="_blank" rel="noopener" class="image fit thumb">
         <img src="../images/thumbs/data-science-skills.jpg" alt="Data Science Skills" />
       </a>
 
       <div class="project-content">
-        <h4>Context:</h4>
+        <h5>Context:</h5>
         <p>An open-source library of reusable skills designed to support AI assistants throughout the entire Data Science project lifecycle, connecting business understanding, analytical methodology, and technical execution.</p>
 
-        <h4>Approach:</h4>
+        <h5>Approach:</h5>
         <p>A modular structure organized into stages such as business understanding, data discovery and preparation, feature engineering, model development, validation, interpretability, deployment, monitoring, and business impact measurement.</p>
 
-        <h4>Key Differentiator:</h4>
+        <h5>Key Differentiator:</h5>
         <p>Each skill follows a standardized structure containing instructions, references, templates, scripts, and practical examples, helping AI agents and data professionals make more consistent decisions beyond simply generating code.</p>
 
         <p class="project-tags">Generative AI · AI Agents · Data Science · Machine Learning · Prompt Engineering · Python · Open Source</p>
       </div>
 
       <a class="button project-button" href="https://github.com/lucasmenghi/data-science-skills" target="_blank" rel="noopener">View project →</a>
-    </article>  
+    </article>
 </div>
+</section>
 </section>
 <section class="project-category">
 <header class="major">
@@ -195,7 +195,7 @@
 <div class="row project-grid">
 <!-- Add new projects here using the same article.project-card structure -->
 <article class="col-6 work-item project-card">
-<h3>Credit Risk ETL Pipeline</h3>
+<h3 class="project-title">Credit Risk ETL Pipeline</h3>
 <a class="image fit thumb" href="https://github.com/lucasmenghi/portifolio/blob/main/images/thumbs/hc_image.jpeg" rel="noopener" target="_blank">
 <img alt="Credit Risk ETL Pipeline" src="../images/thumbs/hc_image.jpeg"/>
 </a>
