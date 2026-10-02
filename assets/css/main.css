@@ -443,7 +443,7 @@ header.major h2 { margin-bottom: 1.5rem; }
 
 .project-subarea .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
   gap: 2rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--line);
@@ -453,10 +453,6 @@ header.major h2 { margin-bottom: 1.5rem; }
   width: auto;
   margin-bottom: 0;
   padding-bottom: 0;
-}
-
-.project-subarea .project-card:only-child {
-  max-width: 42rem;
 }
 
 .project-subarea.is-empty {
