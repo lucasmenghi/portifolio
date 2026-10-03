@@ -13,7 +13,7 @@
 <body class="is-preload">
 <header id="header">
 <div class="inner">
-<a class="image avatar" href="#"><img alt="Lucas Menghi" src="../images/avatar.jpg"/></a>
+<a class="image avatar" href="#"><img alt="Lucas Menghi" decoding="async" height="512" src="../images/avatar.jpg" width="510"/></a>
 <h1>Lucas Menghi</h1>
 </div>
 <div>
@@ -31,10 +31,9 @@
 <p>Esta página reúne projetos práticos nas áreas de <strong>Product Analytics, Data Science, Machine Learning, Data Engineering e Business Intelligence</strong>.</p>
 <p>Alguns projetos são baseados em problemas reais de negócio e foram publicados com dados anonimizados ou sintéticos para preservar confidencialidade, mantendo a metodologia analítica, a lógica de investigação e a estrutura de solução.</p>
 </section>
-<section class="project-category">
-<header class="major">
+<details class="project-category"><summary class="category-summary"><header class="major">
 <h2>📊 Cases de Negócio (Análise e Business Intelligence)</h2>
-</header>
+</header><span class="category-count">1 projeto</span><span class="category-description">Product Analytics · Business Intelligence</span></summary>
 <p>Projetos focados em diagnóstico de jornada, análise de funil, identificação de gargalos, priorização de causas, experimentação e mensuração de impacto em produtos. Vale mencionar que boa parte desses projetos são casos reais, onde preservamos a metodologia e a aplicamos em dados anonimizados, respeitando as regras de compliance.</p>
 <div class="row project-grid">
 <article class="col-6 work-item project-card">
@@ -52,12 +51,11 @@
 <a class="button project-button" href="https://github.com/lucasmenghi/Case_Onboarding_Study" rel="noopener" target="_blank">Ver projeto →</a>
 </article>
 </div>
-</section>
-<section class="project-category">
-<header class="major">
+</details>
+<details class="project-category"><summary class="category-summary"><header class="major">
 <h2>🤖 Data Science &amp; IA Generativa</h2>
-</header>
-<p>Projetos voltados à construção de modelos preditivos, preparação de dados, avaliação de performance, análise estatística e geração de recomendações acionáveis para o negócio.</p><nav class="subarea-nav" aria-label="Navegue por subárea">
+</header><span class="category-count">8 projetos</span><span class="category-description">Modelos de Regressão · Modelos de Classificação · Modelos de Clusterização · Modelos de Deep Learning · Séries Temporais · Produtos de IA Generativa</span></summary>
+<p>Projetos voltados à construção de modelos preditivos, preparação de dados, avaliação de performance, análise estatística e geração de recomendações acionáveis para o negócio.</p><nav aria-label="Navegue por subárea" class="subarea-nav">
 <p class="nav-label">Navegue por subárea</p>
 <ul>
 <li><a href="#regressao">Modelos de Regressão</a></li>
@@ -68,17 +66,16 @@
 <li><a href="#ia-generativa">Produtos de IA Generativa</a></li>
 </ul>
 </nav>
-<section class="project-subarea" id="regressao" aria-labelledby="regressao-title">
-<header class="subarea-heading">
+<details aria-labelledby="regressao-title" class="project-subarea" id="regressao"><summary class="subarea-summary"><header class="subarea-heading">
 <h3 id="regressao-title">Modelos de Regressão</h3>
 <span class="subarea-count">1 projeto publicado</span>
-</header>
+</header></summary>
 <p class="subarea-description">Previsão de valores contínuos, comparação com regras de referência e avaliação do erro em períodos futuros.</p>
 <div class="row project-grid">
 <article class="col-6 work-item project-card">
 <h4 class="project-title">Online Retail — Previsão de Compras</h4>
 <a class="image fit thumb" href="https://github.com/lucasmenghi/online-retail" rel="noopener" target="_blank">
-<img alt="Online Retail — Previsão de compras em 30 dias com regressão e CRISP-DM" src="../images/thumbs/online-retail-cover.png" loading="lazy"/>
+<img alt="Online Retail — Previsão de compras em 30 dias com regressão e CRISP-DM" loading="lazy" src="../images/thumbs/online-retail-cover.png"/>
 </a>
 <div class="project-content">
 <h5>Contexto:</h5>
@@ -92,32 +89,29 @@
 <a class="button project-button" href="https://github.com/lucasmenghi/online-retail" rel="noopener" target="_blank">Ver projeto →</a>
 </article>
 </div>
-</section>
-<section class="project-subarea" id="classificacao" aria-labelledby="classificacao-title">
-<header class="subarea-heading"><h3 id="classificacao-title">Modelos de Classificação</h3><span class="subarea-count">1 projeto publicado</span></header>
+</details>
+<details aria-labelledby="classificacao-title" class="project-subarea" id="classificacao"><summary class="subarea-summary"><header class="subarea-heading"><h3 id="classificacao-title">Modelos de Classificação</h3><span class="subarea-count">1 projeto publicado</span></header></summary>
 <div class="row project-grid"><article class="col-6 work-item project-card">
 <h4 class="project-title">CampaignLift — Bank Marketing Intelligence</h4>
-<a class="image fit thumb" href="campaignlift.html"><img alt="CampaignLift — Bank Marketing Intelligence" src="../images/thumbs/campaignlift-cover.webp" loading="lazy"/></a>
+<a class="image fit thumb" href="campaignlift.html"><img alt="CampaignLift — Bank Marketing Intelligence" loading="lazy" src="../images/thumbs/campaignlift-cover.webp"/></a>
 <div class="project-content"><h5>Contexto:</h5><p>Priorização de ligações bancárias pela propensão de adesão a depósito a prazo, com dados públicos do UCI Bank Marketing e capacidade limitada de contatos.</p><h5>Abordagem:</h5><p>CRISP-DM, comparação de seis configurações, validação em janelas expansivas, exclusão de variáveis posteriores à ligação, calibração e análise de estabilidade temporal.</p><h5>Resultado:</h5><p>Lift agregado de 0,84× ao selecionar 20% dos contatos, capturando 425 conversões históricas. Os ganhos por bloco são pequenos e instáveis; a recomendação documentada é não implantar.</p><p class="project-tags">Python · Scikit-learn · Classificação · CRISP-DM · Validação Temporal · Calibração · Streamlit</p></div>
 <a class="button project-button" href="campaignlift.html">Ver estudo →</a>
 <a class="button project-button" href="https://github.com/lucasmenghi/campaignlift" rel="noopener" target="_blank">Ver projeto →</a>
-</article></div></section>
-<section class="project-subarea" id="clusterizacao" aria-labelledby="clusterizacao-title">
-<header class="subarea-heading"><h3 id="clusterizacao-title">Modelos de Clusterização</h3><span class="subarea-count">1 projeto publicado</span></header>
+</article></div></details>
+<details aria-labelledby="clusterizacao-title" class="project-subarea" id="clusterizacao"><summary class="subarea-summary"><header class="subarea-heading"><h3 id="clusterizacao-title">Modelos de Clusterização</h3><span class="subarea-count">1 projeto publicado</span></header></summary>
 <div class="row project-grid"><article class="col-6 work-item project-card">
 <h4 class="project-title">SellerScope — Marketplace Seller Intelligence</h4>
-<a class="image fit thumb" href="sellerscope.html"><img alt="SellerScope — Marketplace Seller Intelligence" src="../images/thumbs/sellerscope-cover-v2.webp" loading="lazy"/></a>
+<a class="image fit thumb" href="sellerscope.html"><img alt="SellerScope — Marketplace Seller Intelligence" loading="lazy" src="../images/thumbs/sellerscope-cover-v2.webp"/></a>
 <div class="project-content"><h5>Contexto:</h5><p>Segmentação de vendedores do marketplace Olist para orientar investigação comercial e logística, com dados públicos reais.</p><h5>Abordagem:</h5><p>CRISP-DM, sete dimensões, comparação de 15 configurações de K-Means, GMM e Ward, estabilidade por subamostragem e avaliação em período posterior com modelo congelado.</p><h5>Resultado:</h5><p>Dois perfis entre 592 vendedores, silhouette de 0,166 e ARI médio de 0,871. Entre 372 vendedores comuns, 86,6% mantêm o grupo no período posterior. Segmentação descritiva, com sobreposição e hipóteses de ação documentadas.</p><p class="project-tags">Python · Scikit-learn · K-Means · CRISP-DM · Olist · Clusterização · Estabilidade Temporal · Streamlit</p></div>
 <a class="button project-button" href="sellerscope.html">Ver estudo →</a>
 <a class="button project-button" href="https://github.com/lucasmenghi/sellerscope" rel="noopener" target="_blank">Ver projeto →</a>
-</article></div></section>
-<section class="project-subarea" id="deep-learning" aria-labelledby="deep-learning-title"><header class="subarea-heading"><h3 id="deep-learning-title">Modelos de Deep Learning</h3><span class="subarea-count">1 projeto publicado</span></header><div class="row project-grid"><article class="col-6 work-item project-card"><h4 class="project-title">ReviewScope — Amazon Case</h4><a class="image fit thumb" href="reviewscope.html"><img src="../images/thumbs/reviewscope-cover.webp" alt="Amazon Case — inteligência de avaliações" loading="lazy"/></a><div class="project-content"><h5>Contexto:</h5><p>Um Transformer treinado com avaliações reais da Amazon para reconhecer sinais associados a notas de 1–2 estrelas. O objetivo é apoiar a leitura humana e a gestão da experiência do produto.</p><h5>Abordagem:</h5><p>18.000 avaliações reais; divisão temporal; BERT-Tiny ajustado em CPU e comparação com TF-IDF. Época e limiares escolhidos somente na validação.</p><h5>Resultado:</h5><p>Average precision do BERT: 0.840; referência: 0.871. Recall: 93.5%; precision: 61.9%. Teste histórico, sem ROI comprovado.</p><p class="project-tags">Python · PyTorch · Transformers · NLP · Deep Learning · CRISP-DM · Streamlit</p></div><a class="button project-button" href="reviewscope.html">Ver estudo →</a><a class="button project-button" href="https://github.com/lucasmenghi/reviewscope" target="_blank" rel="noopener">Ver projeto →</a></article></div></section>
-<section class="project-subarea" id="series-temporais" aria-labelledby="series-temporais-title"><header class="subarea-heading"><h3 id="series-temporais-title">Séries Temporais</h3><span class="subarea-count">1 projeto publicado</span></header><div class="row project-grid"><article class="col-6 work-item project-card"><h4 class="project-title">DemandScope — Sales Forecasting &amp; Planning</h4><a class="image fit thumb" href="demandscope.html"><img src="../images/thumbs/demandscope-cover-v2.webp" alt="DemandScope — Walmart/M5 · previsão de vendas em 28 dias" loading="lazy"/></a><div class="project-content"><h5>Contexto:</h5><p>Previsão de vendas Walmart/M5 em 28 dias por loja e departamento, para apoiar planejamento comercial e de reposição.</p><h5>Abordagem:</h5><p>CRISP-DM, 70 séries, oito candidatos, quatro origens de backtesting, defasagens seguras para todo o horizonte e teste final após congelamento.</p><h5>Resultado:</h5><p>HistGradientBoosting atingiu WAPE de 9,99%, contra 12,05% da referência: redução relativa de 17,1% no teste histórico. Intervalos nominais 90% cobriram 91,4% das observações. Sem alegação de economia de estoque realizada.</p><p class="project-tags">Python · Scikit-learn · HistGradientBoosting · CRISP-DM · Séries Temporais · Backtesting · Streamlit</p></div><a class="button project-button" href="demandscope.html">Ver estudo →</a><a class="button project-button" href="https://github.com/lucasmenghi/demandscope" target="_blank" rel="noopener">Ver projeto →</a></article></div></section>
-<section class="project-subarea" id="ia-generativa" aria-labelledby="ia-generativa-title">
-<header class="subarea-heading">
+</article></div></details>
+<details aria-labelledby="deep-learning-title" class="project-subarea" id="deep-learning"><summary class="subarea-summary"><header class="subarea-heading"><h3 id="deep-learning-title">Modelos de Deep Learning</h3><span class="subarea-count">1 projeto publicado</span></header></summary><div class="row project-grid"><article class="col-6 work-item project-card"><h4 class="project-title">ReviewScope — Amazon Case</h4><a class="image fit thumb" href="reviewscope.html"><img alt="Amazon Case — inteligência de avaliações" loading="lazy" src="../images/thumbs/reviewscope-cover.webp"/></a><div class="project-content"><h5>Contexto:</h5><p>Um Transformer treinado com avaliações reais da Amazon para reconhecer sinais associados a notas de 1–2 estrelas. O objetivo é apoiar a leitura humana e a gestão da experiência do produto.</p><h5>Abordagem:</h5><p>18.000 avaliações reais; divisão temporal; BERT-Tiny ajustado em CPU e comparação com TF-IDF. Época e limiares escolhidos somente na validação.</p><h5>Resultado:</h5><p>Average precision do BERT: 0.840; referência: 0.871. Recall: 93.5%; precision: 61.9%. Teste histórico, sem ROI comprovado.</p><p class="project-tags">Python · PyTorch · Transformers · NLP · Deep Learning · CRISP-DM · Streamlit</p></div><a class="button project-button" href="reviewscope.html">Ver estudo →</a><a class="button project-button" href="https://github.com/lucasmenghi/reviewscope" rel="noopener" target="_blank">Ver projeto →</a></article></div></details>
+<details aria-labelledby="series-temporais-title" class="project-subarea" id="series-temporais"><summary class="subarea-summary"><header class="subarea-heading"><h3 id="series-temporais-title">Séries Temporais</h3><span class="subarea-count">1 projeto publicado</span></header></summary><div class="row project-grid"><article class="col-6 work-item project-card"><h4 class="project-title">DemandScope — Sales Forecasting &amp; Planning</h4><a class="image fit thumb" href="demandscope.html"><img alt="DemandScope — Walmart/M5 · previsão de vendas em 28 dias" loading="lazy" src="../images/thumbs/demandscope-cover-v2.webp"/></a><div class="project-content"><h5>Contexto:</h5><p>Previsão de vendas Walmart/M5 em 28 dias por loja e departamento, para apoiar planejamento comercial e de reposição.</p><h5>Abordagem:</h5><p>CRISP-DM, 70 séries, oito candidatos, quatro origens de backtesting, defasagens seguras para todo o horizonte e teste final após congelamento.</p><h5>Resultado:</h5><p>HistGradientBoosting atingiu WAPE de 9,99%, contra 12,05% da referência: redução relativa de 17,1% no teste histórico. Intervalos nominais 90% cobriram 91,4% das observações. Sem alegação de economia de estoque realizada.</p><p class="project-tags">Python · Scikit-learn · HistGradientBoosting · CRISP-DM · Séries Temporais · Backtesting · Streamlit</p></div><a class="button project-button" href="demandscope.html">Ver estudo →</a><a class="button project-button" href="https://github.com/lucasmenghi/demandscope" rel="noopener" target="_blank">Ver projeto →</a></article></div></details>
+<details aria-labelledby="ia-generativa-title" class="project-subarea" id="ia-generativa"><summary class="subarea-summary"><header class="subarea-heading">
 <h3 id="ia-generativa-title">Produtos de IA Generativa</h3>
 <span class="subarea-count">3 projetos publicados</span>
-</header>
+</header></summary>
 <p class="subarea-description">Produtos conversacionais, inteligência com LLMs e ferramentas de apoio ao desenvolvimento com agentes.</p>
 <div class="row project-grid">
 <article class="col-6 work-item project-card">
@@ -135,54 +129,43 @@
 <a class="button project-button" href="https://github.com/guiwatanabe/iai-cabe-no-bolso" rel="noopener" target="_blank">Ver projeto →</a>
 </article>
 <article class="col-6 work-item project-card">
-      <h4 class="project-title">RiskSense</h4>
-      <a href="https://github.com/lucasmenghi/risksense" target="_blank" rel="noopener" class="image fit thumb">
-        <img src="../images/thumbs/risksense.jpg" alt="RiskSense — Inteligência Externa de Risco" />
-      </a>
-
-      <div class="project-content">
-        <h5>Contexto:</h5>
-        <p>Produto de inteligência externa de risco criado para antecipar eventos relevantes em grandes empresas antes que seus efeitos apareçam nos indicadores internos. A solução transforma notícias e dados públicos dispersos em sinais estruturados, priorizados e acionáveis para analistas de risco.</p>
-
-        <h5>Abordagem:</h5>
-        <p>Pipeline no Databricks para ingestão auditável de fontes externas, extração de eventos com LLM, resolução de entidades e grupos econômicos, cruzamento com uma carteira autorizada e cálculo de score explicável. Uma aplicação Streamlit centraliza a fila priorizada e registra a avaliação humana dos sinais.</p>
-
-        <h5>Diferencial:</h5>
-        <p>Combina IA Generativa, engenharia de dados e human-in-the-loop em uma arquitetura ponta a ponta, convertendo conteúdo não estruturado em inteligência rastreável para apoiar decisões preventivas.</p>
-
-        <p class="project-tags">Generative AI · LLM · AI Agents · Databricks · PySpark · Delta Lake · Streamlit · Risk Intelligence · Human-in-the-loop</p>
-      </div>
-
-      <a class="button project-button" href="https://github.com/lucasmenghi/risksense" target="_blank" rel="noopener">Ver projeto →</a>
-    </article>
-<article class="col-6 work-item project-card">
-      <h4 class="project-title">Data Science Skills</h4>
-      <a href="https://github.com/lucasmenghi/data-science-skills" target="_blank" rel="noopener" class="image fit thumb">
-        <img src="../images/thumbs/data-science-skills.png" alt="Data Science Skills — Método e governança para agentes de IA" loading="lazy" />
-      </a>
-
-      <div class="project-content">
-        <h5>Contexto:</h5>
-        <p>Biblioteca open source de skills reutilizáveis para apoiar assistentes de IA durante todo o ciclo de vida de projetos de Data Science, conectando entendimento de negócio, metodologia analítica e execução técnica.</p>
-
-        <h5>Abordagem:</h5>
-        <p>Estrutura modular organizada por etapas como Business Understanding, descoberta e preparação de dados, feature engineering, desenvolvimento, validação, interpretabilidade, implantação, monitoramento e mensuração de impacto.</p>
-
-        <h5>Diferencial:</h5>
-        <p>Cada skill segue uma estrutura padronizada com instruções, referências, templates, scripts e exemplos práticos, ajudando agentes de IA e profissionais de dados a tomar decisões mais consistentes além da simples geração de código.</p>
-
-        <p class="project-tags">Generative AI · AI Agents · Data Science · Machine Learning · Prompt Engineering · Python · Open Source</p>
-      </div>
-
-      <a class="button project-button" href="https://github.com/lucasmenghi/data-science-skills" target="_blank" rel="noopener">Ver projeto →</a>
-    </article>
+<h4 class="project-title">RiskSense</h4>
+<a class="image fit thumb" href="https://github.com/lucasmenghi/risksense" rel="noopener" target="_blank">
+<img alt="RiskSense — Inteligência Externa de Risco" src="../images/thumbs/risksense.jpg"/>
+</a>
+<div class="project-content">
+<h5>Contexto:</h5>
+<p>Produto de inteligência externa de risco criado para antecipar eventos relevantes em grandes empresas antes que seus efeitos apareçam nos indicadores internos. A solução transforma notícias e dados públicos dispersos em sinais estruturados, priorizados e acionáveis para analistas de risco.</p>
+<h5>Abordagem:</h5>
+<p>Pipeline no Databricks para ingestão auditável de fontes externas, extração de eventos com LLM, resolução de entidades e grupos econômicos, cruzamento com uma carteira autorizada e cálculo de score explicável. Uma aplicação Streamlit centraliza a fila priorizada e registra a avaliação humana dos sinais.</p>
+<h5>Diferencial:</h5>
+<p>Combina IA Generativa, engenharia de dados e human-in-the-loop em uma arquitetura ponta a ponta, convertendo conteúdo não estruturado em inteligência rastreável para apoiar decisões preventivas.</p>
+<p class="project-tags">Generative AI · LLM · AI Agents · Databricks · PySpark · Delta Lake · Streamlit · Risk Intelligence · Human-in-the-loop</p>
 </div>
-</section>
-</section>
-<section class="project-category">
-<header class="major">
+<a class="button project-button" href="https://github.com/lucasmenghi/risksense" rel="noopener" target="_blank">Ver projeto →</a>
+</article>
+<article class="col-6 work-item project-card">
+<h4 class="project-title">Data Science Skills</h4>
+<a class="image fit thumb" href="https://github.com/lucasmenghi/data-science-skills" rel="noopener" target="_blank">
+<img alt="Data Science Skills — Método e governança para agentes de IA" loading="lazy" src="../images/thumbs/data-science-skills.png"/>
+</a>
+<div class="project-content">
+<h5>Contexto:</h5>
+<p>Biblioteca open source de skills reutilizáveis para apoiar assistentes de IA durante todo o ciclo de vida de projetos de Data Science, conectando entendimento de negócio, metodologia analítica e execução técnica.</p>
+<h5>Abordagem:</h5>
+<p>Estrutura modular organizada por etapas como Business Understanding, descoberta e preparação de dados, feature engineering, desenvolvimento, validação, interpretabilidade, implantação, monitoramento e mensuração de impacto.</p>
+<h5>Diferencial:</h5>
+<p>Cada skill segue uma estrutura padronizada com instruções, referências, templates, scripts e exemplos práticos, ajudando agentes de IA e profissionais de dados a tomar decisões mais consistentes além da simples geração de código.</p>
+<p class="project-tags">Generative AI · AI Agents · Data Science · Machine Learning · Prompt Engineering · Python · Open Source</p>
+</div>
+<a class="button project-button" href="https://github.com/lucasmenghi/data-science-skills" rel="noopener" target="_blank">Ver projeto →</a>
+</article>
+</div>
+</details>
+</details>
+<details class="project-category"><summary class="category-summary"><header class="major">
 <h2>🏗️ Data Engineering &amp; Automation</h2>
-</header>
+</header><span class="category-count">1 projeto</span><span class="category-description">ETL · Automação</span></summary>
 <p>Projetos relacionados à ingestão, tratamento, organização e automação de dados, com foco em transformar dados brutos em bases confiáveis para análise e tomada de decisão.</p>
 <div class="row project-grid">
 <!-- Adicione novos projetos aqui seguindo o mesmo modelo de article.project-card -->
@@ -201,7 +184,7 @@
 <a class="button project-button" href="https://github.com/lucasmenghi/Case_Default_Risk" rel="noopener" target="_blank">Ver projeto →</a>
 </article>
 </div>
-</section>
+</details>
 <section>
 <header class="major"><h2>📞 Contato</h2></header>
 <p>Sinta-se à vontade para entrar em contato comigo através de:</p>
