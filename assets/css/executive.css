@@ -126,3 +126,14 @@ body.projects-page #main>section>p{max-width:none}
 @media(max-width:980px){#header .portfolio-nav{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:22px}#header .portfolio-nav a{text-align:center}.language-switch{margin-bottom:24px}}
 
 #main>section:first-of-type{padding-top:0}
+
+/* Full-width project introduction with tighter category spacing. */
+body.projects-page #main{max-width:none}
+#main>section:first-of-type{padding-top:32px}
+body.projects-page #main>section:first-of-type{padding-bottom:12px}
+body.projects-page #main>section:first-of-type>p:last-child{margin-bottom:0}
+body.projects-page #main>section:first-of-type>p:first-of-type{max-width:none}
+body.projects-page #main>details.project-category:first-of-type{margin-top:20px}
+body.projects-page .project-category>.project-grid{max-width:1302px}
+body.projects-page .project-subarea>.project-grid{max-width:1260px}
+@media(max-width:660px){#main>section:first-of-type{padding-top:24px}body.projects-page #main>section:first-of-type{padding-bottom:8px}body.projects-page #main>details.project-category:first-of-type{margin-top:16px}}
